@@ -1,0 +1,13 @@
+:root {
+    --mainColor: #5CDB95;
+    --secondryColor: #38a9ff;
+    --thirdColor: tomato;
+    --navbarbgcolor: #3f4257;
+    --navbaracolor: #515365;
+}
+
+$mainColor: var(--mainColor) ;
+$secondryColor: var(--secondryColor);
+$thirdColor: var(--thirdColor);
+$navbarbgcolor: var(--navbarbgcolor);
+$navbaracolor: var(--navbaracolor);

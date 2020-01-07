@@ -1,0 +1,127 @@
+.prod-p {
+    .product {
+        padding: 25px;
+        .prod-imgs {
+            .main-img {
+                height: 350px;
+                background-color: $input-bg;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .another-imgs {
+                height: 100px;
+                padding: 10px 15px;
+                display: flex;
+                justify-content: center;
+                .other-imgs-cont {
+                    background-color: $input-bg;
+                    height: 100%;
+                    margin: 0px 5px;
+                    img {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+        .prod-details {
+            color: $sm-text-2;
+            .prod-title {
+                color: #fff;
+            }
+            .prod-cost {
+                color: $main-color;
+
+            }
+            .prod-short-desc {
+                color: $sm-text-2;
+            }
+            .prod-actions {
+                .prod-num {
+                    background-color: $nav-bg;
+                    border-radius: 15px;
+                    padding: 3px 5px;
+                    color: #fff;
+                    outline: 0;
+                    border: 2px solid $main-color;
+                    width: 75px;
+                    text-align: center;
+                    margin: 0px 30px 10px 0px;
+                }
+            }
+        }
+        .tab {
+            .nav-pills {
+                .nav-item {
+                    .nav-link {
+                        background-color: $nav-bg;
+                        color: $sm-text-2;
+                        &.active {
+                            color: $main-color;
+                        }
+                    }
+                }
+            }
+            .tab-content {
+                color: $sm-text-2;
+            }
+        }
+    }
+    .rel-prod {
+        position: relative;
+        padding: 0px 15px;
+        .bef-btn,
+        .aft-btn {
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            width: 15px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 400;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #eee;
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.5);
+                opacity: 0.8;
+            }
+        }
+        .bef-btn {
+            left: 0px;
+        }
+        .aft-btn {
+            right: 0px;
+        }
+        .product-card {
+            background-color: $input-bg;
+            padding: 0px 15px 10px 15px;
+            text-align: left;
+            .prod-img-cont {
+                padding: 15px 0px;
+                display: flex;
+                justify-content: center;
+                .prod-img {
+                    max-width: 100%;
+                    height: 180px;
+                }
+            }
+            .prod-title {
+                padding-left: 0px;
+            }
+            .prod-cost {
+                color: $main-color;
+                font-weight: 600;
+            }
+
+            .hk-btn-g {
+                padding: 5px 10px;
+                font-size: 10px;
+                float: right;
+                margin-top: -3px;
+            }
+        }
+    }
+}

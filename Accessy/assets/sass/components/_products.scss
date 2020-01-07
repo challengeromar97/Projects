@@ -1,0 +1,80 @@
+.products {
+    padding: 0px 20px;
+    .heading {
+        font-family: 'Mali-Regular';
+        font-size: 22px;
+        padding-bottom: 20px;
+    }
+    .row {
+        > div {
+            padding: 0px 5px;
+
+            .product {
+                color: $textColor;
+                font-family: 'Montserrat-Regular';
+                font-size: 13px;
+                .prod-img {
+                    width: 100%;
+                    border-radius: 5px;
+                }
+                .prod-heart {
+                    padding: 15px 0px 0px;
+                    display: inline-flex;
+                    justify-content: flex-end;
+                    transform: rotateY(180deg);
+                    input {
+                        display: none;
+                        &:checked ~ label::after {
+                            opacity: 1;
+                        }
+                    }
+                    label {
+                        margin: 0px;
+                        display: block;
+                        cursor: pointer;
+                        width: 15px;
+                        position: relative;
+                        &:hover {
+                            &::after {
+                                opacity: 1;
+                            }
+                            & ~ label::after {
+                                opacity: 1;
+                            }
+                        }
+                        &::before {
+                            content: '\f004';
+                            font-family: 'Font Awesome 5 Free';
+                            display: block;
+                            font-size: 13px;
+                            position: relative;
+                            color: $textColor;
+                        }
+
+                        &::after {
+                            content: '\f004';
+                            font-family: 'Font Awesome 5 Free';
+                            display: block;
+                            font-size: 13px;
+                            position: absolute;
+                            color: $textColor;
+                            font-weight: 800;
+                            top: 0;
+                            opacity: 0;
+                            transition: 0.5s;
+                        }
+                    }
+                }
+                .prod-num {
+                    font-weight: 800;
+                }
+                .prod-name {
+                    font-weight: 500;
+                }
+                .prod-price {
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}

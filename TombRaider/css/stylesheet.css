@@ -1,0 +1,317 @@
+body {
+    font-family: 'OpenSans', sans-serif;
+    background-color: black;
+}html {
+    scroll-behavior: smooth;
+  }
+@font-face {
+    font-family: "GeForce";
+    src: url("../fonts/GeForce-Bold.woff") format('woff');
+}
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url("../fonts/Montserrat-Bold.ttf") format('woff');
+}
+@font-face {
+    font-family: "Montserrat-Medium";
+    src: url("../fonts/Montserrat-Medium.ttf") format('woff');
+}
+@font-face {
+    font-family: "OpenSans-Bold";
+    src: url("../fonts/OpenSans-Bold.woff") format('woff');
+}
+}
+@font-face {
+    font-family: "OpenSans";
+    src: url("../fonts/OpenSans.woff") format('woff');
+}
+ul.prod_list li {
+    list-style-type: none;
+    position: relative;
+    padding-left: 10px;
+    }
+    
+ul.prod_list li:before {
+    content: "\25BA \0020";
+    font-size: 10px;
+    position: absolute;
+    top: 0px;
+    left: -10px;
+    color: #76b900;
+} 
+                                                        /* Start Of Header */
+#navbar img {
+    width: 280px;
+}
+#navbar ul li {
+    font-family: 'Open Sans',sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding-left: 50px;
+}
+
+#top_header img{
+    width: 100%;
+}
+
+#top_header img:first-of-type{
+    display: block;
+}
+#top_header img:last-of-type{
+    display: none;
+}
+@media(max-width: 650px) {
+
+    #top_header img:first-of-type{
+        display: none;
+    }
+    #top_header img:last-of-type{
+        display: block;
+        
+    }
+}
+
+#title_1 {
+    font-size: 36px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    font-family: 'GeForce', sans-serif;
+}
+#title_2 {
+    color: #76b900;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0px;
+    line-height: 1.2;
+    font-family: 'GeForce', sans-serif;
+}
+#title_3 {
+    padding-top: 100px;
+    text-align: center;
+    font-size: 36px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    color: #ffffff;
+    font-family: 'GeForce', sans-serif;
+}
+#title_4 {
+    text-align: center;
+    line-height: 1.5;
+    padding-top: 10px;
+    color: #ffffff;
+    font-size: 18px;
+    padding-bottom: 75px;
+}
+
+/* Bottom Header */
+#bottom-header {
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+    padding: 60px 0px 40px; 
+
+}
+#btm-btn {
+    padding: 15px 30px;
+}
+
+
+
+
+
+
+.button {
+    text-transform: uppercase;
+    background-color: #76b900;
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 10px 0px;
+    display: inline-block;
+    font-weight: 700;
+}
+
+a.button:hover {
+    color: #76b900;
+    background-color: #fff;
+    text-decoration: none;
+}
+
+                                                        /* End of header */
+                                                        /* Start Body */
+#middle-body {
+    background-color: #000000;
+    width: 100%;
+
+}
+#middle-body iframe {
+    margin: auto;
+    display: block;
+    max-width: 75%;
+    height: 650px;
+    margin-bottom: 150px;
+}
+#logos {
+    width: 100%;
+}
+#logos img:first-of-type {
+    display:block;
+    margin: auto;
+    margin-bottom: 20px;    
+}
+
+#logos img:last-of-type {
+    display:block;
+    margin:auto;    
+    width:100%;
+    max-width: 500px;
+    padding-bottom: 20px;
+}
+#go {
+    font-size: 12px;
+    color: #6a6a6a;
+    margin-bottom: 50px;
+}
+
+.acard {
+    height: auto;
+    border-radius: 10px 10px 10px 10px;
+    background: #252525;
+    border: 2px solid #464646;
+    margin-bottom: 40px;
+}
+.hcard {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    background: #464646;
+    border-radius: 10px 10px 0 0;
+}
+
+.hcard p {
+    margin-bottom: 0;
+    font-size: 15px !important;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+.bcard {
+    padding: 15px;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+}
+.bcard img {
+    height: 100%;
+    max-width: 100%;
+}
+.bcard .sml {
+    height: 125px;
+    margin-top: 35px;
+}
+.bcard .img-cont {
+    margin: 5px auto;
+    height: 220px;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+.bcard p {
+    text-align: left;
+    margin-bottom: 8px;
+}
+.bcard ul{
+    text-align: left;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 280px;
+    line-height: 25px;
+    margin-left: -20px;
+    font-size: 14px;
+    color: #ffffff;
+}
+.bcard .money {
+    color: #76b900;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -.5px;
+    
+}
+.bcard .currency {
+    font-size: 19px;
+    
+}
+hr {
+    color: #fff;
+    background-color: #fff;
+    margin: 50px;
+}
+#idiot {
+    text-align: center;
+    margin-bottom: 25px;
+}
+#idiot img {
+    width: 400px;
+
+}
+#bottom img:first-of-type{
+    width: 100%;
+}
+#bottom img:last-of-type{
+    display: none;
+}
+@media (max-width: 700px) {
+        
+    #bottom img:first-of-type{
+        display: none;
+    }
+    #bottom img:last-of-type{
+        display: block;
+        width: 100%;
+        
+    }
+}
+                                                        /* End of Body*/
+                                                        /* Start Footer */
+/* Footer */
+#footer {
+    background-color: #646466;
+    color: #fff;
+    width: 100%;
+    padding-top: 15px;
+}
+#footer div {
+
+    display: flex;
+    justify-content: space-between;
+}
+#footer i {
+    margin-left: 15px;
+    margin-top: -3px;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+}
+#footer i:hover {
+    color: #55bdee;
+}
+
+                                                        /* End Of Footer */

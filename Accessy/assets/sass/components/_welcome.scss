@@ -1,0 +1,20 @@
+.welcome {
+    padding: 50px 0px 30px;
+    @extend .doubleLines;
+
+    .header-apple {
+        font-family: 'HomemadeApple-Regular';
+        color: $headerColor;
+        font-weight: 800;
+        letter-spacing: 5px;
+        font-size: 22px;
+        padding-bottom: 10px;
+    }
+
+    .header-amatica {
+        font-family: "AmaticaSC-Bold";
+        color: $headerColor;
+        font-weight: 800;
+        letter-spacing: 6px;
+    }
+}

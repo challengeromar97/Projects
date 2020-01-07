@@ -1,0 +1,231 @@
+.home-p {
+    #why-hk {
+        padding: 0px 20px;
+        text-align: center;
+        .icon {
+            width: auto;
+            height: 45px;
+            margin: 20px 0px;
+        }
+        .hk-h3 {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            color: rgb(211, 210, 210);
+        }
+        .hk-p {
+            color: $sm-text-1;
+            font-size: 0.8rem;
+            line-height: 20px;
+        }
+    }
+
+    #case-studies {
+        .bg {
+            padding: 50px 0px;
+            background-size: 100% 100%;
+            box-shadow: 10px 20px 200px 200px rgba(0, 0, 0, 0.5) inset;
+            background: url('../img/background/orange-and-black-background.jpg');
+            .all-cases {
+                max-width: 650px;
+                margin: auto;
+                text-align: center;
+
+                &::before {
+                    content: '';
+                    display: block;
+                    width: 100%;
+                    height: 50px;
+                    background-color: $main-color;
+                }
+                img {
+                    width: 100%;
+                    height: 230px;
+                    margin-top: -35px;
+                    border: 4px solid $bg-color;
+                }
+                .one-case {
+                    background-color: $bg-color;
+                    padding-bottom: 20px;
+
+                    &:nth-of-type(2) {
+                        background-color: #000;
+                    }
+                    .categ {
+                        position: relative;
+                        text-transform: uppercase;
+                        font-size: 22px;
+                        margin-top: 10px;
+                    }
+                    .title {
+                        color: $main-color;
+                        font-size: 26px;
+                        margin-top: 20px;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                    }
+                    .title::after {
+                        content: '';
+                        display: block;
+                        height: 1px;
+                        width: 40px;
+                        background-color: $main-color;
+                        margin: 15px auto;
+                    }
+                    .text {
+                        font-size: 15px;
+                        line-height: 30px;
+                        color: $sm-text-2;
+                    }
+                    .text::after {
+                        content: '';
+                        display: block;
+                        width: 100%;
+                        height: 1px;
+                        margin: 16px auto;
+                        background-color: $main-color;
+                    }
+                    .hk-btn-g {
+                        font-weight: 500;
+                        text-decoration: none;
+                    }
+                    .hk-btn-g:hover {
+                        color: #fff;
+                    }
+                }
+            }
+
+            @media (max-width: 767px) {
+                .all-cases {
+                    max-width: 300px;
+                    .one-case {
+                        margin-bottom: 30px;
+                    }
+                    img {
+                        margin-top: 15px;
+                    }
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    #best-seller {
+        .all-products {
+            position: relative;
+            padding: 0px 15px;
+            .bef-btn,
+            .aft-btn {
+                position: absolute;
+                top: 0px;
+                bottom: 0px;
+                width: 15px;
+                cursor: pointer;
+                font-size: 13px;
+                font-weight: 400;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #eee;
+                &:hover {
+                    background-color: rgba(0, 0, 0, 0.5);
+                    opacity: 0.8;
+                }
+            }
+            .bef-btn {
+                left: 0px;
+            }
+            .aft-btn {
+                right: 0px;
+            }
+            .product-card {
+                background-color: $input-bg;
+                padding: 0px 15px 10px 15px;
+                text-align: left;
+                .prod-img-cont {
+                    padding: 15px 0px;
+                    display: flex;
+                    justify-content: center;
+                    .prod-img {
+                        max-width: 100%;
+                        height: 180px;
+                    }
+                }
+                .prod-title {
+                    padding-left: 0px;
+                }
+                .prod-cost {
+                    color: $main-color;
+                    font-weight: 600;
+                }
+    
+                .hk-btn-g {
+                    padding: 5px 10px;
+                    font-size: 10px;
+                    float: right;
+                    margin-top: -3px;
+                }
+            }
+        }
+    }
+
+    #our-blogs {
+        .blogs {
+            background: url('../img/background/shutterstock-376404349.png');
+            box-shadow: 0px 0px 250px 250px rgba(0, 0, 0, 0.81) inset;
+            background-size: cover;
+            background-position: center;
+
+            .one-blog {
+                margin: 0px;
+                .col-lg-6 {
+                    padding: 0px;
+                }
+                &:first-of-type {
+                    flex-direction: row-reverse;
+                }
+                .blog-details {
+                    padding: 30px 40px;
+                    .header {
+                        margin-bottom: 10px;
+                        display: flex;
+                        justify-content: space-between;
+                        span {
+                            padding: 0px 5px;
+                        }
+                    }
+                    .title {
+                        text-align: left;
+                        letter-spacing: 2px;
+                        &::after {
+                            content: '';
+                            display: block;
+                            width: 20px;
+                            height: 3px;
+                            background-color: $main-color;
+                            margin: 10px 0 30px;
+                        }
+                    }
+                    .sub-title {
+                        font-size: 22px;
+                        text-align: left;
+                    }
+                    .content {
+                        text-align: left;
+                        line-height: 22px;
+                        margin: 0px;
+                        color: $sm-text-1;
+                    }
+                    .hk-btn-g {
+                        margin: 20px auto 15px;
+                    }
+                }
+            }
+            .blog-img img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

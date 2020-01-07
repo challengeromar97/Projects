@@ -1,0 +1,348 @@
+/* All colors */
+:root {
+  --mainColor: #5CDB95;
+  --secondryColor: #38a9ff;
+  --thirdColor: tomato;
+  --navbarbgcolor: #3f4257;
+  --navbaracolor: #515365; }
+
+#newsfeed {
+  /* Card Block */
+  /* Any Paragraph Style */
+  /* Main Colors */
+  /* post-form */ }
+  #newsfeed .card-block {
+    border-radius: 5px;
+    border: 1px solid #e6ecf5;
+    margin-bottom: 15px;
+    background-color: #fff; }
+  #newsfeed pre {
+    margin: 20px 0;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #888da8; }
+  #newsfeed .mainColor {
+    color: var(--mainColor) !important; }
+  #newsfeed #post-form {
+    background-color: #fff;
+    max-width: 870px;
+    margin: auto;
+    margin-bottom: 20px;
+    /* Post Header */
+    /* Post Footer */ }
+    #newsfeed #post-form header {
+      display: flex;
+      border-bottom: 1px solid #e6ecf5;
+      height: 160px;
+      overflow: hidden;
+      transition: all 0.2s ease-in-out;
+      /* Onhover */
+      /* Post Profile Pic */ }
+      #newsfeed #post-form header:focus-within {
+        border-bottom: 1px solid var(--mainColor); }
+      #newsfeed #post-form header img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin: 25px 0 0 25px; }
+      #newsfeed #post-form header textarea {
+        width: 100%;
+        height: 160px;
+        resize: none;
+        padding: 25px 25px;
+        outline: 0;
+        border: 0;
+        color: var(--mainColor); }
+    #newsfeed #post-form footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+      height: 80px; }
+      @media (max-width: 470px) {
+        #newsfeed #post-form footer {
+          flex-direction: column;
+          height: 120px;
+          justify-content: space-evenly;
+          padding-bottom: 10px; } }
+      #newsfeed #post-form footer #post-icons {
+        margin-left: 15px; }
+        #newsfeed #post-form footer #post-icons i {
+          color: #c2c5d9;
+          font-size: 25px;
+          padding: 15px;
+          cursor: pointer;
+          transition: all 0.15s ease; }
+          #newsfeed #post-form footer #post-icons i:hover {
+            color: var(--mainColor); }
+      #newsfeed #post-form footer #post-btns div,
+      #newsfeed #post-form footer #post-btns input {
+        padding: 0.8rem 2.1rem;
+        font-size: 0.688rem;
+        border-radius: 0.3rem;
+        color: #888da8;
+        border: 1px solid;
+        text-align: center;
+        transition: all 0.15s ease-in-out;
+        font-weight: 700;
+        margin-right: 15px;
+        cursor: pointer;
+        border-color: #d8dbe6;
+        display: inline-block;
+        transition: all 0.15s ease-in-out; }
+      #newsfeed #post-form footer #post-btns input {
+        color: #fff;
+        border-color: var(--mainColor);
+        background-color: var(--mainColor); }
+        #newsfeed #post-form footer #post-btns input:hover {
+          color: var(--mainColor);
+          background-color: #fff;
+          border-color: var(--mainColor); }
+      #newsfeed #post-form footer #post-btns div {
+        color: #fff;
+        border-color: var(--secondryColor);
+        background-color: var(--secondryColor); }
+        #newsfeed #post-form footer #post-btns div:hover {
+          color: var(--secondryColor);
+          background-color: #fff;
+          border-color: var(--secondryColor); }
+  #newsfeed #posts {
+    margin: auto; }
+    #newsfeed #posts .posts {
+      margin-bottom: 15px; }
+      #newsfeed #posts .posts i {
+        cursor: pointer;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 1.5; }
+        #newsfeed #posts .posts i:hover {
+          color: var(--mainColor); }
+      #newsfeed #posts .posts header {
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; }
+        #newsfeed #posts .posts header img {
+          height: 50px;
+          width: 50px;
+          border-radius: 50%;
+          margin-right: 15px; }
+        #newsfeed #posts .posts header .posts-info p {
+          margin: 0;
+          font-weight: 700;
+          color: #515365;
+          line-height: 1.3;
+          cursor: pointer;
+          transition: all 0.15s ease-in-out; }
+          #newsfeed #posts .posts header .posts-info p:hover {
+            color: var(--mainColor); }
+        #newsfeed #posts .posts header .posts-info span {
+          font-size: 0.812rem;
+          font-weight: 400;
+          line-height: 1.5;
+          color: #888da8; }
+        #newsfeed #posts .posts header .post-det {
+          position: relative; }
+          #newsfeed #posts .posts header .post-det .post-det-icon {
+            color: #c2c5d9; }
+          #newsfeed #posts .posts header .post-det .post-det-cont {
+            position: absolute;
+            padding: 10px 20px;
+            top: 100%;
+            right: 0px;
+            background-color: #fff;
+            display: none;
+            width: 180px;
+            box-shadow: 0 0 34px 0 rgba(63, 66, 87, 0.1);
+            border-radius: 4px;
+            z-index: 500; }
+            #newsfeed #posts .posts header .post-det .post-det-cont ul {
+              padding: 7px 0;
+              font-size: 14px;
+              color: #515365;
+              font-weight: 700;
+              margin: 0;
+              list-style: none; }
+              #newsfeed #posts .posts header .post-det .post-det-cont ul li:hover {
+                color: var(--mainColor);
+                cursor: pointer; }
+            #newsfeed #posts .posts header .post-det .post-det-cont::before {
+              content: "";
+              position: absolute;
+              width: 0;
+              height: 0;
+              bottom: 100%;
+              right: 5px;
+              border-bottom: 10px solid #fff;
+              border-right: 10px solid transparent;
+              border-left: 10px solid transparent; }
+      #newsfeed #posts .posts .post-card {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border: 1px solid #e6ecf5;
+        border-bottom-color: white;
+        background-color: #fff;
+        padding: 15px 25px 0 25px; }
+        #newsfeed #posts .posts .post-card .posts-content .post-text {
+          margin: 20px 0;
+          font-weight: 400; }
+        #newsfeed #posts .posts .post-card .posts-content .posts-video {
+          border: 1px solid #e6ecf5;
+          border-radius: 3px;
+          overflow: hidden;
+          margin: 20px 0;
+          display: flex;
+          flex-direction: row;
+          min-height: 250px; }
+          @media (max-width: 770px) {
+            #newsfeed #posts .posts .post-card .posts-content .posts-video {
+              flex-direction: column; } }
+          #newsfeed #posts .posts .post-card .posts-content .posts-video .video-container {
+            position: relative;
+            min-height: 250px;
+            width: auto; }
+            @media (max-width: 770px) {
+              #newsfeed #posts .posts .post-card .posts-content .posts-video .video-container {
+                width: 100%; } }
+            #newsfeed #posts .posts .post-card .posts-content .posts-video .video-container img {
+              height: 100%;
+              width: 100%; }
+            #newsfeed #posts .posts .post-card .posts-content .posts-video .video-container i {
+              position: absolute;
+              top: 40%;
+              left: 43%;
+              color: #fff;
+              font-size: 50px;
+              line-height: 1;
+              cursor: pointer;
+              background-color: rgba(255, 99, 71, 0.5);
+              border-radius: 50%; }
+              #newsfeed #posts .posts .post-card .posts-content .posts-video .video-container i:hover {
+                color: var(--mainColor);
+                background-color: rgba(236, 222, 219, 0.5); }
+          #newsfeed #posts .posts .post-card .posts-content .posts-video .video-info {
+            padding: 20px;
+            display: flex;
+            flex-direction: column; }
+            #newsfeed #posts .posts .post-card .posts-content .posts-video .video-info p {
+              font-weight: 400;
+              cursor: pointer;
+              color: #515365;
+              font-size: 1.375rem; }
+            #newsfeed #posts .posts .post-card .posts-content .posts-video .video-info span {
+              font-weight: 400;
+              line-height: 1.5;
+              color: #888da8;
+              font-size: 13px;
+              margin-bottom: 15px; }
+            #newsfeed #posts .posts .post-card .posts-content .posts-video .video-info a {
+              font-size: 13px;
+              color: #9a9fbf; }
+              #newsfeed #posts .posts .post-card .posts-content .posts-video .video-info a:hover {
+                color: var(--mainColor); }
+        #newsfeed #posts .posts .post-card .posts-footer {
+          border-top: solid 1px rgba(0, 0, 0, 0.1);
+          display: flex;
+          flex-direction: column;
+          position: relative; }
+          #newsfeed #posts .posts .post-card .posts-footer .post-status {
+            display: flex;
+            height: 80px;
+            align-items: center;
+            margin-bottom: 5px; }
+            #newsfeed #posts .posts .post-card .posts-footer .post-status .likes-container {
+              display: flex;
+              align-items: center; }
+            #newsfeed #posts .posts .post-card .posts-footer .post-status .img-likes-cont {
+              display: flex;
+              max-width: 100px;
+              overflow: hidden; }
+            #newsfeed #posts .posts .post-card .posts-footer .post-status .img-likes {
+              width: 25px;
+              height: 25px;
+              border-radius: 50%;
+              box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); }
+            #newsfeed #posts .posts .post-card .posts-footer .post-status a {
+              color: #c2c5d9;
+              display: flex;
+              align-items: center; }
+              #newsfeed #posts .posts .post-card .posts-footer .post-status a:hover {
+                color: var(--mainColor); }
+          #newsfeed #posts .posts .post-card .posts-footer .com-share {
+            margin-left: auto;
+            display: flex; }
+          #newsfeed #posts .posts .post-card .posts-footer span {
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.5;
+            padding: 0 15px 0 10px; }
+            #newsfeed #posts .posts .post-card .posts-footer span:hover {
+              color: var(--mainColor); }
+      #newsfeed #posts .posts .post-comments {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1px; }
+        #newsfeed #posts .posts .post-comments .comment-input {
+          position: relative;
+          text-align: center; }
+          #newsfeed #posts .posts .post-comments .comment-input input {
+            border: 0;
+            outline: 0;
+            padding: 15px 100px 15px 30px;
+            width: 100%;
+            border-bottom-right-radius: 15px;
+            border-bottom-left-radius: 15px;
+            border-right: 5px solid var(--mainColor);
+            border-bottom: 5px solid var(--mainColor);
+            color: var(--mainColor); }
+          #newsfeed #posts .posts .post-comments .comment-input i {
+            position: absolute;
+            top: 10px;
+            color: var(--mainColor); }
+            #newsfeed #posts .posts .post-comments .comment-input i:hover {
+              color: var(--secondryColor); }
+          #newsfeed #posts .posts .post-comments .comment-input i:last-of-type {
+            right: 20px; }
+          #newsfeed #posts .posts .post-comments .comment-input i:first-of-type {
+            right: 55px; }
+        #newsfeed #posts .posts .post-comments .justForSomeAnimation {
+          display: none; }
+          #newsfeed #posts .posts .post-comments .justForSomeAnimation .all-comments {
+            max-height: 250px;
+            overflow: auto;
+            /* Track */
+            /* Handle */ }
+            #newsfeed #posts .posts .post-comments .justForSomeAnimation .all-comments::-webkit-scrollbar-track {
+              background: var(--mainColor); }
+            #newsfeed #posts .posts .post-comments .justForSomeAnimation .all-comments::-webkit-scrollbar-thumb {
+              background: var(--secondryColor); }
+            #newsfeed #posts .posts .post-comments .justForSomeAnimation .all-comments article {
+              background-color: #fafbfd;
+              border: 1px solid #e6ecf5;
+              margin: 2px 30px;
+              padding: 15px; }
+              #newsfeed #posts .posts .post-comments .justForSomeAnimation .all-comments article footer {
+                display: flex; }
+                #newsfeed #posts .posts .post-comments .justForSomeAnimation .all-comments article footer > a {
+                  color: #c2c5d9;
+                  display: flex;
+                  align-items: center;
+                  cursor: pointer;
+                  font-weight: 400;
+                  line-height: 1.5; }
+                  #newsfeed #posts .posts .post-comments .justForSomeAnimation .all-comments article footer > a:hover {
+                    color: var(--mainColor); }
+                  #newsfeed #posts .posts .post-comments .justForSomeAnimation .all-comments article footer > a span {
+                    cursor: pointer;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    padding: 0 15px 0 10px; }
+                    #newsfeed #posts .posts .post-comments .justForSomeAnimation .all-comments article footer > a span:hover {
+                      color: var(--mainColor); }
+                #newsfeed #posts .posts .post-comments .justForSomeAnimation .all-comments article footer i {
+                  font-size: 25px; }
+
+/*# sourceMappingURL=newsfeed.css.map */

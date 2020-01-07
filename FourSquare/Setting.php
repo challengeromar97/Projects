@@ -1,0 +1,12 @@
+<html>
+	<body>
+		
+<input type="file" id="input">
+	
+	
+	</body>
+	
+	
+	
+	
+</html>

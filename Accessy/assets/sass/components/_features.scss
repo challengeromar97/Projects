@@ -1,0 +1,21 @@
+.features {
+    padding-top: 50px;
+    .one-feature {
+        font-family: 'Dekko-Regular';
+        color: $headerColor;
+        max-width: 250px;
+        margin: auto;
+        .feature-icon {
+            max-height: 120px;
+            margin-bottom: 20px;
+        }
+        .feature-header {
+            font-size: 18px;
+            font-weight: 800;
+        }
+        .feature-content {
+            font-size: 14px;
+            width: 50px;
+        }
+    }
+}

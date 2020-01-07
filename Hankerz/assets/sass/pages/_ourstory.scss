@@ -1,0 +1,50 @@
+
+
+.ourstory-p {
+    .img-header {
+        width: 100%;
+    }
+    .ourstory {
+        padding: 15px 30px;
+        h2 {
+            text-align: center;
+            padding: 50px 0px 0px;
+            font-weight: 600;
+        }
+        .sub-title {
+            max-width: 450px;
+            margin: 0px auto 20px;
+            text-align: center;
+        }
+        p {
+            color: $sm-text-2;
+        }
+        .capabilities {
+            ul {
+                margin: 0px;
+                padding: 0px;
+                text-align: center;
+                list-style-type: none;
+                margin-top: 20px;
+            }
+            li {
+                padding: 5px 0px;
+            }
+        }
+        .activites {
+            margin-top: 40px;
+            li {
+                margin-bottom: 10px;
+            }
+        }
+        .ref-logo {
+            padding: 20px 0px;
+            display: flex;
+            justify-content: space-between;
+            overflow: hidden;
+            img {
+                max-width: 75px;
+            }
+        }
+    }
+}

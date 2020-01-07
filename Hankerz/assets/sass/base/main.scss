@@ -1,0 +1,214 @@
+body {
+    font-family: Roboto-Regular;
+    font-size: 0.9rem;
+    background-color: $bg-color;
+}
+img[alt="Free Web Hosting"] {
+    display: none;
+}
+// Scroll Bar
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: $main-color;
+    border-radius: 5px;
+}
+
+// Hr
+.hr {
+    &:after {
+        content: "";
+        background-color: rgba(163, 162, 162, 0.1);
+        display: block;
+        height: 1px;
+        width: 100%;
+        margin: 15px auto 15px;
+    }
+}
+
+i.fab, i.fas, i.fal, i.far {
+    color: $main-color;
+    font-size: 16px;
+    margin: 0px 2px;
+    cursor: pointer;
+    &:hover {
+        opacity: .5;
+    }
+}
+// Heading 2
+.hk-h2 {
+    color: #fff;
+    letter-spacing: 0.1rem;
+    position: relative;
+    padding: 30px 0px 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 100%;
+        width: 10%;
+        left: 45%;
+        margin: auto;
+        background-color: $main-color;
+        height: 4px;
+    }
+}
+
+// Check Box inputs
+.hk-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    &:hover .checkmark {
+        background-color: #ccc;
+    }
+    input[type='checkbox'] {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+        &:checked ~ .checkmark {
+            background-color: $main-color;
+        }
+        &:checked ~ .checkmark:after {
+            display: block;
+        }
+    }
+    .checkmark {
+        position: absolute;
+        top: 2px;
+        left: 0;
+        height: 15px;
+        width: 15px;
+        background-color: #eee;
+
+        &::after {
+            content: '';
+            position: absolute;
+            display: none;
+            left: 5px;
+            top: 2px;
+            width: 5px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+    }
+}
+
+// Inputs
+.hk-input {
+    background-color: $input-bg;
+    border: 0px;
+    outline: 0px;
+    padding: 10px 15px;
+    color: $sm-text-2;
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    resize: none;
+}
+// Icons Sizes
+.icon {
+    width: 1rem;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+.hk-btn,
+.hk-btn-g {
+    padding: 4px 22px;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    display: inline-block;
+    text-decoration: none;
+    &:hover {
+        opacity: 0.8;
+        text-decoration: none;
+        color: #fff;
+    }
+}
+// Buttons With Gradient
+.hk-btn-g {
+    @include main-gradient(to left);
+}
+// Buttons
+.hk-btn {
+    border: 1px solid #fff;
+    background-image: transparent;
+}
+
+// Bread Crumb
+.hk-breadcrumb {
+    height: 200px;
+    width: 100%;
+    background-color: $main-color;
+    color: #fff;
+    text-align: center;
+    padding-top: 40px;
+    text-transform: uppercase;
+
+    .bc-header {
+        font-weight: bold;
+    }
+    .bc-list {
+        a {
+            text-decoration: none;
+            &:not(.active) {
+                cursor: pointer;
+                color: $sm-text-2;
+                &::after {
+                    content: ' >';
+                    display: inline;
+                    color: $sm-text-2;
+                    font-weight: bold;
+                }
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+// Pagination
+.pagination {
+    margin: 5px 0px 5px 5px;
+    > div {
+        cursor: pointer;
+        padding: 0px 5px 5px 0px;
+        p {
+            background-color: $input-bg;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:hover,
+            &.active {
+                background-color: $main-color;
+                color: $nav-bg;
+                font-weight: bold;
+            }
+        }
+    }
+}

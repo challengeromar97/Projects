@@ -1,0 +1,26 @@
+table {
+    margin-bottom: 0px!important;
+    width: 100%!important;
+    height: 100vh!important;
+}
+th {
+    text-align: center;
+    padding: 5px 5px !important;
+}
+td {
+    padding: 0px!important;
+}
+.slotdata {
+    font-size: 13px;
+    padding: 10px 5px;
+    height: 100%;
+}
+.LB {
+    background-color: #dc3545;
+}
+.LC {
+    background-color: #17a2b8;
+}
+.TU {
+    background-color: #28a745;
+}

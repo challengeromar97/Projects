@@ -1,0 +1,44 @@
+.contactus-p {
+    padding: 50px 3rem;
+
+    .col-md-6 {
+        margin-bottom: 20px;
+    }
+    .details {
+        @include bg-gradient(180deg);
+        box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.35);
+        padding: 40px 20px 80px;
+        text-align: left;
+        max-width: 300px;
+        height: 100%;
+        margin: auto;
+        h3 {
+            padding: 20px 0px;
+        }
+        ul {
+            margin: 0px;
+            padding: 0px;
+            list-style-type: none;
+            li {
+                padding: 5px 0px;
+                a {
+                    img {
+                        margin-right: 5px;
+                    }
+                    text-decoration: none;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .contact-form {
+        p {
+            color: $sm-text-2;
+        }
+        .hk-btn-g {
+            padding: 7px 35px;
+            margin: 10px 0px;
+            box-shadow: 0px 4px 28.22px 5.78px rgba(0, 0, 0, 0.26);
+        }
+    }
+}

@@ -1,0 +1,10 @@
+@mixin bottomLine($c) {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 1px;
+    left: 0px;
+    background-color: $c;
+}

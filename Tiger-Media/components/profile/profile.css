@@ -1,0 +1,108 @@
+:root {
+  --mainColor: #5CDB95;
+  --secondryColor: #38a9ff;
+  --thirdColor: tomato;
+  --navbarbgcolor: #3f4257;
+  --navbaracolor: #515365; }
+
+#profilePage {
+  padding: 0 30px; }
+  @media (max-width: 767px) {
+    #profilePage {
+      padding: 0px 10px; } }
+  #profilePage #pHeader {
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #e6ecf5;
+    margin-bottom: 15px; }
+    #profilePage #pHeader #pBG {
+      position: relative;
+      background-size: cover;
+      background-position: 100% 0px;
+      background-repeat: no-repeat;
+      height: 360px;
+      width: 100%; }
+      @media (max-width: 767px) {
+        #profilePage #pHeader #pBG {
+          margin-bottom: 100px; } }
+      #profilePage #pHeader #pBG #profilePic {
+        text-align: center;
+        position: relative;
+        color: #515365;
+        top: 275px;
+        z-index: 1; }
+        #profilePage #pHeader #pBG #profilePic #locate-img {
+          position: absolute;
+          top: 10px;
+          left: 10px; }
+          #profilePage #pHeader #pBG #profilePic #locate-img i {
+            color: #fff;
+            padding: 5px;
+            display: block;
+            cursor: pointer; }
+            #profilePage #pHeader #pBG #profilePic #locate-img i:hover {
+              color: var(--mainColor); }
+        #profilePage #pHeader #pBG #profilePic img {
+          height: 100px;
+          width: 100px;
+          border-radius: 50%;
+          border: 4px solid #fff;
+          cursor: pointer;
+          transition: all .3s ease-in-out; }
+          #profilePage #pHeader #pBG #profilePic img:hover {
+            box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
+            transform: scale(1.1, 1.1); }
+        #profilePage #pHeader #pBG #profilePic h3 {
+          color: #515365;
+          cursor: pointer;
+          font-size: 1.375rem;
+          font-weight: 700;
+          margin-bottom: 0;
+          line-height: 1.7;
+          transition: all .2s ease-in-out; }
+          #profilePage #pHeader #pBG #profilePic h3:hover {
+            color: var(--mainColor); }
+        #profilePage #pHeader #pBG #profilePic p {
+          font-size: .812rem;
+          font-weight: 400;
+          line-height: 1.5;
+          color: #888da8; }
+      #profilePage #pHeader #pBG #changeBG {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 45px;
+        right: 0;
+        font-size: 23px; }
+        #profilePage #pHeader #pBG #changeBG i {
+          cursor: pointer;
+          z-index: 20;
+          color: #fff;
+          font-size: 15px;
+          background-color: rgba(0, 0, 0, 0.2);
+          padding: 5px;
+          border-radius: 5px; }
+          #profilePage #pHeader #pBG #changeBG i:hover {
+            color: var(--mainColor) !important; }
+    #profilePage #pHeader #pNav ul {
+      display: flex;
+      list-style: none;
+      justify-content: space-evenly;
+      align-items: center;
+      position: relative;
+      z-index: 10; }
+      #profilePage #pHeader #pNav ul li {
+        margin: 40px 0 30px 0; }
+        #profilePage #pHeader #pNav ul li a {
+          transition: all .15s ease;
+          font-size: 14px;
+          font-weight: 700;
+          color: #9a9fbf;
+          display: block;
+          cursor: pointer; }
+          #profilePage #pHeader #pNav ul li a:hover {
+            color: var(--mainColor);
+            text-decoration: none; }
+
+/*# sourceMappingURL=profile.css.map */

@@ -1,0 +1,8 @@
+%link-bar {
+    background-color: $secColor;
+    color: $headerColor;
+    position: relative;
+    &::after {
+        @include bottomLine($thirdColor);
+    }
+}

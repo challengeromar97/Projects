@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords"    content="">
+    <meta name="author"      content="">
+    <meta name="viewport"    content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Omar Website</title>
+     <!-- Fav icon -->
+    <link rel="icon" href="images/favicon.png">
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="css/fontawesome-pro.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap-4.3.2.min.css">
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+<!-- Start Of Body-->
+
+<!-- Start header -->
+<header id="home" class="bg-light container-fluid d-none d-md-flex justify-content-between align-items-center">
+
+   <!-- Social Media -->
+    <div>
+    <!-- Social Media Icons -->
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-youtube"></i>
+    </div>
+
+    <!--title of the page -->
+    <span>Go Shopping Now</span>
+
+    <!--Country div -->
+    <div id="country" class="d-flex align-items-center">
+
+        <span>Challengeromar@hotmail.com</span>
+        <!-- Dropdown Language -->
+        <div class="dropdown">
+            <!-- dropdown Button -->
+            <div class="btn nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true"     >Language</div>
+            <!-- dropdown language list -->
+            <div class="dropdown-menu dropdown-menu-right" id="lang-list">
+               <a href="#" class="dropdown-item">Arabic</a>
+               <a href="#" class="dropdown-item">English</a>
+               <a href="#" class="dropdown-item">Chines</a>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- End header -->
+
+<!-- Start Navigation bar -->
+<nav class="bg-white position-sticky sticky-top navbar navbar-expand-md border-bottom navbar-light justify-content-end" >
+
+    <!-- logo -->
+    <a href="index.html" id="logo" class="navbar-brand mr-auto"><div>Omar</div></a>
+
+    <!-- Register -->
+    <div id="login" class="mr-2 mr-md-0 ml-md-2 order-md-12 position-relative ">
+
+        <!-- Container of both -->
+        <div class="dropdown">
+
+            <!-- Register Button -->
+            <button type="button" id="user-badge" data-toggle="dropdown">
+                <i class="fal fa-user-alt"></i>
+                <span class="badge badge-danger badge-pill user-badge">3</span>
+            </button>
+
+            <!-- Register Dropdown -->
+            <div class="dropdown-menu dropdown-menu-right reg-dropdown">
+                <!-- Form Login -->
+                <form class="px-4 py-3 form-group">
+
+                    <!-- Form inputs -->
+                    <input type="email" class="form-control mb-3" id="email" placeholder="Email">
+                    <input type="password" class="form-control mb-3" id="Password" placeholder="Password">
+
+                    <!-- Remember Me -->
+                    <div class="form-check pb-2">
+                        <input type="checkbox" class="form-check-input" id="remember">
+                        <label class="form-check-label" for="remember">Remember me </label>
+                    </div>
+                    <!-- Sign in Button -->
+                    <button type="submit" class="btn btn-outline-primary">Sign in</button>
+                </form>
+
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">New User? Sign up</a>
+                <a class="dropdown-item" href="#">Forgot password?</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Expand Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links"  aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+    <!-- Start Navbar List -->
+    <div id="navbar-links" class="collapse navbar-collapse">
+
+        <!-- Start Tool bar -->
+        <div id="nav-links" class="py-3 bg-light d-md-none d-flex flex-column justify-content-between align-items-center">
+
+           <!-- Social Media -->
+            <div>
+            <!-- Social Media Icons -->
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+
+            <!--title of the page -->
+            <span>Omar Elsayed Website</span>
+
+            <!-- Email -->
+            <span>Challengeromar@hotmail.com</span>
+
+            <!--Country div -->
+            <div class="nav-items dropdown">
+                <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" >Language</a>
+                <div class="dropdown-menu">
+                   <a href="#" class="dropdown-item">Arabic</a>
+                   <a href="#" class="dropdown-item">English</a>
+                   <a href="#" class="dropdown-item">Chines</a>
+                </div>
+            </div>
+        </div>
+        <!-- End Tool bar -->
+
+        <!-- Navbar Links -->
+        <ul class="navbar-nav ml-auto ">
+            <li class="nav-item current"><a href="#home" class="nav-link">Home <span class="sr-only">(current)</span></a></li>
+            <li class="nav-item"><a href="#shop" class="nav-link">Shop</a></li>
+            <li class="nav-item"><a href="#feature" class="nav-link">Feature</a></li>
+            <li class="nav-item"><a href="#sale" class="nav-link">Sale</a></li>
+            <li class="nav-item"><a href="#blog" class="nav-link">blog</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+
+            <li class="navbar-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Websites</a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a href="#" class="dropdown-item">My CV</a>
+                        <a href="#" class="dropdown-item">Blog 2</a>
+                        <a href="#" class="dropdown-item">Blog 3</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">Other Blogs</a>
+                    </div>
+            </li>
+
+        </ul>
+
+    </div>
+    <!-- End Nav-bar List -->
+</nav>
+<!-- End navigation bar -->
+
+
+<!-- Start home Slide -->
+  <section id="slide" class="m-0">
+     <!-- Start Carousel -->
+      <div id="carouselExampleControls" class="carousel slide h-100" data-ride="carousel">
+
+         <!-- Counter Carousel -->
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+
+         <!-- All items -->
+          <div class="carousel-inner h-100">
+
+           <!-- First Item -->
+            <div class="carousel-item active h-100">
+                <img src="images/examples/bg-01.jpg" class="d-block w-100 h-100 " alt="...">
+                <!-- Carousel Caption -->
+                <div class="carousel-caption mb-5">
+                    <button class="btn btn-danger btn-lg rounded-pill px-5"> Shop Now </button>
+                </div>
+            </div>
+
+            <!-- Second item -->
+            <div class="carousel-item h-100">
+              <img src="images/examples/bg-02.jpg" class="d-block w-100 h-100" alt="...">
+                <!-- Carousel Caption -->
+                <div class="carousel-caption mb-5">
+                    <button class="btn btn-danger btn-lg rounded-pill px-5"> Shop Now </button>
+                </div>
+            </div>
+
+            <!-- Third item -->
+            <div class="carousel-item h-100">
+              <img src="images/examples/bg-03.jpg" class="d-block w-100 h-100" alt="...">
+                <!-- Carousel Caption -->
+                <div class="carousel-caption mb-5">
+                    <button class="btn btn-danger btn-lg rounded-pill px-5"> Shop Now </button>
+                </div>
+            </div>
+          </div>
+
+          <a class="carousel-control-prev rounded-circle home-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="fas fa-lg fa-arrow-left main-color" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next rounded-circle home-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="fas fa-lg fa-arrow-right main-color" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+
+    </div>
+</section>
+<!-- Start home Slide -->
+
+
+<!-- Shop Section -->
+<section id="shop" class="container text-center">
+        <h2 class="pb-4"> Shop Section </h2>
+        <!-- Galary -->
+        <div id="galary" class="row justify-content-center">
+
+        <!-- One Item -->
+         <div class="col-lg-4 col-md-6 col-sm-12 one-item">
+                <img alt="..." src="images/examples/shop-00.jpg">
+                <div class="overlay">
+                    <h3 class="btn">Cottonball Sweater Casual Dress For Women - White</h3>
+                    <a href="#" class="btn btn-lg"> Levi&#39;s </a>
+                </div>
+         </div>
+
+        <!-- One Item -->
+         <div class="col-lg-4 col-md-6 col-sm-12 one-item">
+                <img alt="..." src="images/examples/shop-01.jpg">
+                <div class="overlay">
+                    <h3 class="btn">Cottonball Sweater Casual Dress For men - Yellow</h3>
+                    <a href="#" class="btn btn-lg"> Timberland </a>
+                </div>
+         </div>
+        <!-- One Item -->
+         <div class="col-lg-4 col-md-6 col-sm-12 one-item">
+                <img alt="..." src="images/examples/shop-02.jpg">
+                <div class="overlay">
+                    <h3 class="btn">Abercrombie &#38; Fitch Blue Short Shorts For Women</h3>
+                    <a href="#" class="btn btn-lg"> Shorts </a>
+                </div>
+         </div>
+        <!-- One Item -->
+         <div class="col-lg-4 col-md-6 col-sm-12 one-item">
+                <img alt="..." src="images/examples/shop-03.jpg">
+                <div class="overlay">
+                    <h3 class="btn">Tory Burch Bag For Women,Green - Crossbody Bags</h3>
+                    <a href="#" class="btn btn-lg"> Bags &#38; Wallets </a>
+                </div>
+         </div>
+        <!-- One Item -->
+         <div class="col-lg-4 col-md-6 col-sm-12 one-item">
+                <img alt="..." src="images/examples/shop-04.jpg">
+                <div class="overlay">
+                    <h3 class="btn">Cellini White Shirt Neck Shirts For Men</h3>
+                    <a href="#" class="btn btn-lg"> Shirts </a>
+                </div>
+         </div>
+        <!-- One Item -->
+         <div class="col-lg-4 col-md-6 col-sm-12 one-item">
+                <img alt="..." src="images/examples/shop-05.jpg">
+                <div class="overlay">
+                    <h3 class="btn">Cottonball T-Shirt For Men - Yellow</h3>
+                    <a href="#" class="btn btn-lg"> T-shirts </a>
+                </div>
+         </div>
+        <!-- One Item -->
+         <div class="col-lg-4 col-md-6 col-sm-12 one-item">
+                <img alt="..." src="images/examples/shop-06.jpg">
+                <div class="overlay">
+                    <h3 class="btn">Casio Men's Multi-Dial Solar-Powered Watch with Resin Bracelet PRW-6000Y-1AER</h3>
+                    <a href="#" class="btn btn-lg"> Casio </a>
+                </div>
+         </div>
+        <!-- One Item -->
+         <div class="col-lg-4 col-md-6 col-sm-12 one-item">
+                <img alt="..." src="images/examples/shop-07.jpg">
+                <div class="overlay">
+                    <h3 class="btn">Pants Jeans For Men - Blue Black</h3>
+                    <a href="#" class="btn btn-lg"> Pants </a>
+                </div>
+         </div>
+        </div>
+</section>
+<!-- End Shop Section -->
+
+<!-- Start Feature Section -->
+<section id="feature" class="container">
+  <h2 class="pb-5">Feature</h2>
+
+  <!-- Carousel -->
+  <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+
+    <div class="carousel-inner">
+
+      <div class="carousel-item active" data-interval="false">
+        <div class="row flex-nowrap text-center">
+          <div>
+            <img src="images/examples/shop-00.jpg" class="d-block" alt="...">
+            <a href="#">Buy Now</a>
+            <p>Here is some text</p>
+          </div>
+          <div>
+            <img src="images/examples/shop-01.jpg" class="d-block" alt="...">
+            <a href="#">Buy Now</a>
+            <p>Here is some text</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item" data-interval="false">
+        <div class="row flex-nowrap text-center">
+          <div>
+            <img src="images/examples/shop-07.jpg" class="d-block" alt="...">
+            <a href="#">Buy Now</a>
+            <p>Here is some text</p>
+          </div>
+          <div>
+            <img src="images/examples/shop-04.jpg" class="d-block" alt="...">
+            <a href="#">Buy Now</a>
+            <p>Here is some text</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item" data-interval="false">
+        <div class="row flex-nowrap text-center">
+          <div>
+            <img src="images/examples/shop-07.jpg" class="d-block" alt="...">
+            <a href="#">Buy Now</a>
+            <p>Here is some text</p>
+          </div>
+          <div>
+            <img src="images/examples/shop-05.jpg" class="d-block" alt="...">
+            <a href="#">Buy Now</a>
+            <p>Here is some text</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item" data-interval="false">
+        <div class="row flex-nowrap text-center">
+          <div>
+            <img src="images/examples/shop-00.jpg" class="d-block" alt="...">
+            <a href="#">Buy Now</a>
+            <p>Here is some text</p>
+          </div>
+          <div>
+            <img src="images/examples/shop-01.jpg" class="d-block" alt="...">
+            <a href="#">Buy Now</a>
+            <p>Here is some text</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+      <i class="fas fa-arrow-left"></i>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+      <i class="fas fa-arrow-right"></i>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+<!-- End Feature Section -->
+
+
+   <section id="sale" class="container">
+       <h2 class="pb-4"> On Sale </h2>
+       <div class="row">
+           <div class="col-md-6 col-12">
+               <img alt="..." src="images/examples/onsale-01.jpg">
+           </div>
+           <div class="col-md-6 col-12">
+               <img alt="..." src="images/examples/onsale-02.jpg">
+           </div>
+
+       </div>
+   </section>
+
+   <section id="blog" class="container text-center">
+       <h2 class="pb-4"> Blogs </h2>
+       <div id="blogs" class="row">
+         <div class="col-lg-3 col-md-4 col-sm-6 col-12 d-flex flex-column ">
+             <img alt="..." src="images/examples/shop-03.jpg">
+             <a href="#">Black Friday Guide: Best Sales &#38; Discount Codes</a>
+             <h6>By <a href="#">Nancy Ward</a> on July 22, 2017</h6>
+             <span>Duis ut velit gravida nibh bibendum commodo. Sus-pendisse pellentesque.</span>
+         </div>
+         <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+             <img alt="..." src="images/examples/shop-01.jpg">
+             <a href="#">Black Friday Guide: Best Sales &#38; Discount Codes</a>
+             <h6>By <a href="#">Nancy Ward</a> on July 22, 2017</h6>
+             <span>Sus-pendisse pellentesque mattis augue id. Duis ut velit gravida nibh bibendum .</span>
+         </div>
+         <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+             <img alt="..." src="images/examples/shop-04.jpg">
+             <a href="#">Black Friday Guide: Best Sales &#38; Discount Codes</a>
+             <h6>By <a href="#">Nancy Ward</a> on July 22, 2017</h6>
+             <span>Duis ut velit gravida nibh bibendum commodo. Sus-pendisse pellentesque mattis augue id.</span>
+         </div>
+         <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+             <img alt="..." src="images/examples/shop-02.jpg">
+             <a href="#">Black Friday Guide: Best Sales &#38; Discount Codes</a>
+             <h6>By <a href="#">Nancy Ward</a> on July 22, 2017</h6>
+             <span>Duis ut velit gravida nibh bibendum commodo. augue id euismod.</span>
+         </div>
+         <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+             <img alt="..." src="images/examples/shop-07.jpg">
+             <a href="#">Black Friday Guide: Best Sales &#38; Discount Codes</a>
+             <h6>By <a href="#">Nancy Ward</a> on July 22, 2017</h6>
+             <span>Duis ut velit gravida nibh bibendum commodo. augue id euismod.</span>
+         </div>
+       </div>
+   </section>
+
+   <section id="about" class="mt-5 container text-center">
+       <h2 class="pb-4"> About </h2>
+       <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+              <img alt="..." src="images/examples/pp(4).jpg"/>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+              <img alt="..." src="images/examples/pp(3).jpg"/>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+              <img alt="..." src="images/examples/pp(2).jpg"/>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+              <img alt="..." src="images/examples/pp(1).jpg"/>
+          </div>
+
+       </div>
+   </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- Start Footer -->
+<footer id="page-footer" class="bg-light border-top pt-2 mt-5">
+    <div class="container-fluid">
+        <div class="row">
+           <!-- Get in touch Section -->
+            <div class="col-md-4 my-3 f-auto">
+                <h4 class="my-3">Get in touch</h4>
+                <p>
+                    Any questions?
+                </p>
+                <p>
+                    Let me know by send an email
+                </p>
+                <p>
+                   Or Just call me on (+02) 01554171056
+                </p>
+                <p>
+                    Address: 7st Mubarak&#44; EinShams&#44;Egypt
+                </p>
+                <div>
+                    <i class="fab fa-facebook-messenger"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fal fa-envelope"></i>
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+            </div>
+
+           <!-- Links Section -->
+            <div class="col-md-3 my-3 f-auto">
+                <h4 class="my-3">Links</h4>
+                <ul class="navbar-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Experience</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Blogs</a></li>
+                </ul>
+            </div>
+
+           <!-- Contact Section -->
+            <div class="col-md-5 my-3 f-auto">
+                <h4 class="my-3">Feel Free To Contact Me</h4>
+                <div>
+                    <input type="text"   class="form-control mb-2" placeholder="Name"/>
+                    <input type="email"  class="form-control mb-2" placeholder="Email"/>
+                    <input type="text"   class="form-control mb-2" placeholder="Subject"/>
+                    <textarea id="tarea" class="form-control mb-2" placeholder="Enter message here"></textarea>
+                    <input class="btn btn-success form-control mb-2" type="submit" value="Send"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center bg-dark">
+        <span>&#169; 2019 Omar Elsayed&#44; All Rights Reserved</span>
+    </div>
+
+</footer>
+ <!-- End Footer -->
+
+
+<!-- End Of Body -->
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap-4.3.2.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

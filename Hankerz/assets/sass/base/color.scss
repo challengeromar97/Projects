@@ -1,0 +1,19 @@
+$main-color: #d14609; // The Main Color
+$sec-color: #772A16;  // Secondary Color
+$third-color: #E9DDCD; // Third Color
+$g-color-2: #782805;  // Gradient Color 1
+$g-color-1: #d24a00;  // Gradient Color 2
+$bg-color-g1: #fd5e09; // Background Gradien Color 1
+$bg-color-g2: #c13005; // Background Gradien Color 2
+$nav-bg: #262626; // Navigation Bar Background Color
+$bg-color: #1b1b1b; // Background Color
+$sm-text-1: #898989; // First Small Text Color
+$sm-text-2: #bdb8af; // Second Small Text Color
+$input-bg: #383838; // Input Background Color
+
+@mixin main-gradient($direction) {
+    background-image: linear-gradient($direction,#fd5e09 0%,#c13005 100%);
+}
+@mixin bg-gradient($direction) {
+    background-image: linear-gradient($direction,#d24a00 0%,#782805 100%);
+}

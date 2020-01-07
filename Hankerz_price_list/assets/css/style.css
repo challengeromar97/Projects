@@ -1,0 +1,160 @@
+@font-face {
+    font-family: hankerz;
+    src: url('../fonts/BebasNeue-Regular.ttf');
+}
+@font-face {
+    font-family: hankerz-book;
+    src: url('../fonts/BebasNeue-Book.ttf');
+}
+@font-face {
+    font-family: hankerz-light;
+    src: url('../fonts/BebasNeue-Light.ttf');
+}
+body {
+    font-family: hankerz;
+}
+.bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../img/aaaaaaaaaaaaaaaa1.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+}
+.logo-container {
+    width: 763px;
+    text-align: left;
+    color: #fff;
+    margin-bottom: 10px;
+    position: relative;
+}
+.logo {
+    height: 74px;
+}
+.logo-2 {
+    height: 50px;
+    margin-top: 11px;
+    margin-left: 15px;
+}
+.capture-details {
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    transform: translate(0, -50%);
+    background-color: #262626;
+    padding: 15px 10px;
+    margin: 0px 25px;
+    display: none;
+}
+.capture-details input {
+    font-family: hankerz-book;
+    color: #262626;
+}
+.capture-btn {
+    padding: 10px;
+    margin: 10px 0px 0px;
+    background-color: #a3320b;
+    cursor: pointer;
+}
+.table {
+    color: #fff;
+    padding: 5px 0px 20px 20px;
+    position: relative;
+    background-color: #1a1a1a;
+    display: flex;
+    width: max-content;
+    box-shadow: 0px 0px 20px 1px #000;
+    z-index: 2;
+}
+
+.header {
+    font-size: 22px;
+    letter-spacing: .05rem;
+    text-align: center;
+    padding: 1px 10px;
+}
+.hk {
+    margin-right: 20px;
+}
+.cat .list-container li {
+    letter-spacing: 0.0615rem;
+}
+.list-container {
+    margin: 0px;
+    list-style-type: none;
+    padding: 0px;
+}
+
+.list-container li:nth-of-type(even){
+    background-color: #a3320b;
+}
+.list-container li:nth-of-type(odd){
+    background-color: #262626;
+}
+.list-container li {
+    text-align: center;
+    padding: 1px 5px;
+    font-family: hankerz-book;
+    letter-spacing: .025rem;
+
+}
+
+.name .list-container li:nth-of-type(even) input{
+    background-color: #a3320b;
+}
+.name .list-container li:nth-of-type(odd) input{
+    background-color: #262626;
+}
+.name .list-container input {
+    min-width: 450px;
+}
+
+input { 
+    outline: 0;
+    border: 0;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    padding: 0px;
+}
+
+
+.qty .list-container li:nth-of-type(even) input{
+    background-color: #a3320b;
+}
+.qty .list-container li:nth-of-type(odd) input{
+    background-color: #262626;
+}
+.qty .list-container input {
+    width: 30px;
+}
+.price .list-container li:nth-of-type(even) input{
+    background-color: #a3320b;
+}
+.price .list-container li:nth-of-type(odd) input{
+    background-color: #262626;
+}
+.price .list-container input {
+    width: 45px;
+    padding-right: 0px;
+    text-align:right;   
+    padding-right: 5px;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+.price span {
+    display: none;
+    letter-spacing: .0755rem;
+}
+input#total_price {
+    width: 65px;
+}
+input#discount {
+    color: crimson;
+}

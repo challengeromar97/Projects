@@ -1,0 +1,27 @@
+@import "base/fonts";
+
+@import "./base/variables";
+
+@import "./base/mixins";
+
+@import "./base/placeholders";
+
+@import "./base/main";
+
+@import "./components/header";
+
+@import "./components/navbar";
+
+@import "./components/welcome";
+
+@import "./components/slider";
+
+@import "./components/features";
+
+@import "./components/products";
+
+/* Slider Section */
+section.down {
+    min-height: 1050px;
+    width: 100%;
+}

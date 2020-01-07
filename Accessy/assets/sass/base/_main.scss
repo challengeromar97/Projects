@@ -1,0 +1,54 @@
+/* Main Style */
+body {
+    background-color: $bgColor;
+}
+
+/* Buttons */
+.ay-btn,
+.ay-btn-grd {
+    padding: 5px 18px;
+    font-family: 'Montserrat-Medium';
+    font-size: 14px;
+    background-color: #fff;
+    border: 1px solid $mainColor;
+    border-radius: 8px;
+    text-align: center;
+    margin-right: 5px;
+    cursor: pointer;
+    color: $mainColor;
+}
+.ay-btn:hover,
+.ay-btn-grd:hover {
+    opacity: 0.8;
+}
+.ay-btn-grd {
+    background-color: $mainColor;
+    color: #fff;
+}
+i {
+    color: $mainColor;
+    padding: 5px;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+
+.header-text {
+    font-family: 'Megrim-Regular';
+    font-weight: bolder;
+    color: $headerColor;
+}
+
+
+.doubleLines {
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    position: relative;
+    position: relative;
+    &:after {
+        @include bottomLine($bgColor2);
+    }
+    &:before {
+        @include bottomLine($bgColor2);
+        top: calc(100% + 8px);
+    }
+}

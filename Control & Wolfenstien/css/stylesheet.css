@@ -1,0 +1,220 @@
+
+@font-face {
+    font-family: "GeForce";
+    src: url("../fonts/GeForce-Bold.woff") format('woff');
+}
+body {
+    background-color: #000;
+    font-family: 'GeForce', sans-serif;
+}
+#navbar img {
+    width: 280px;
+}
+#navbar ul li {
+    font-family: 'Open Sans',sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding-left: 50px;
+}
+
+#header {
+    text-align: center;
+    background-color: #000;
+}
+#header img {
+    max-width: 100%;
+}
+#second_h, #third_h {
+    display: none;
+}
+
+@media ( max-width: 1200px){
+    #first_h {
+        display: none;
+    }
+    #second_h {
+        display: block;
+    }
+}
+@media (max-width: 800px) {
+    #first_h {
+        display: none;
+    }
+    #second_h {
+        display: none;
+    }
+    #third_h {
+        display: block;
+    }
+}
+#youtube .video {
+    cursor: pointer;
+}
+.youtube {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(0,0,0,.5);
+    justify-content: center;
+    align-items: center;
+}
+.exit {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    content: "X";
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    cursor: pointer;
+}
+.exit:hover {
+    color: #76b900;
+}
+.youtube iframe {
+    width: 80%;
+    height: 80%;
+}
+
+.h_line {
+    margin: 15px auto;
+    max-width: 954px;
+    background-color: #1a1a1a;
+    display: block;
+    height: 2px;
+}
+
+.video_name {
+    text-align: center;
+    font-size: 20px;
+    color: #76b900;
+    text-transform: uppercase;
+}
+.video_name p {
+    margin: 0px;
+    padding: 0px;
+}
+.video_name a {
+    display: inline-block;
+    padding: 5px 20px;
+    margin: 15px 0px;
+    background-color: #76b900;
+    color: #fff;
+}
+.video_name a:hover {
+    background-color: #76d900;
+    text-decoration: none;
+}
+#shop {
+    text-align: center;
+    padding-top: 15px;
+}
+
+#shop .head {
+    color: #fff;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+
+
+.acard {
+    height: auto;
+    margin-bottom: 40px;
+}
+
+.bcard {
+    padding: 15px;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.bcard img {
+    height: 100%;
+    max-width: 100%;
+}
+.bcard .img-cont {
+    margin: 5px auto;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    height: 135px;
+    margin-top: 35px;
+}
+.bcard .money {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -.5px;
+}
+.bcard .currency {
+    font-size: 19px;
+}
+.hcard p {
+    margin: 0;
+    padding: 0;
+    font-size: 22px !important;
+    color: #76b900;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.button {
+    text-transform: uppercase;
+    background-color: #76b900;
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 10px 0px;
+    display: inline-block;
+    font-weight: 700;
+}
+
+a.button:hover {
+    color: #76b900;
+    background-color: #fff;
+    text-decoration: none;
+}
+
+#about img {
+    width: 100%;
+}
+
+                                                        /* Start Footer */
+/* Footer */
+#footer {
+    background-color: #646466;
+    color: #fff;
+    width: 100%;
+    padding-top: 15px;
+}
+#footer div {
+
+    display: flex;
+    justify-content: space-between;
+}
+#footer i {
+    margin-left: 15px;
+    margin-top: -3px;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+}
+#footer i:hover {
+    color: #55bdee;
+}
+                                                        /* End Of Footer */

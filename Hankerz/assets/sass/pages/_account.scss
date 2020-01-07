@@ -1,0 +1,41 @@
+.account-p {
+    .user-info {
+        text-align: center;
+        padding: 50px 0px;
+        i.fa-user-circle {
+            font-size: 155px;
+            margin-bottom: 15px;
+        }
+    }
+
+    #user-data {
+        .card {
+            border-left: 0px;
+            border-right: 0px;
+            border-top: 1px solid rgba(255,255,255,.125);
+            border-bottom: 1px solid rgba(255,255,255,.125);
+            background-color: $nav-bg;
+            border-radius: 0px;
+            .card-header {
+                border-left: 0px;
+                border-right: 0px;
+                border-top: 1px solid rgba(255,255,255,.125);
+                border-bottom: 1px solid rgba(255,255,255,.125);
+                padding: 0px;
+                h2 {
+                    text-align: center;
+                    .btn {
+                        width: 100%;
+                        padding: 15px 0px;
+                        text-decoration: none;
+                        color: $main-color;
+                        border: 0px;
+                        &.collapsed {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

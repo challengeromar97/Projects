@@ -1,0 +1,29 @@
+.newsletter {
+    padding: 100px 0px 50px;
+    background: url("../img/background/nl-bg.png");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    .container {
+        max-width: 740px;
+        p {
+            color: $sm-text-2;
+        }
+        .hk-input {
+            border-radius: 10px;
+            max-width: 350px;
+            display: inline;
+        }
+        .hk-btn-nl {
+            background-color: $input-bg;
+            border-radius: 10px;
+            cursor: pointer;
+            display: inline-block;
+            padding: 10px;
+            &:hover {
+                opacity: .8;
+            }
+        }
+    }
+}

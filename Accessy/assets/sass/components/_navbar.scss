@@ -1,0 +1,26 @@
+/* Top Navbar*/
+.top_navbar {
+    header {
+        padding-top: 5px;
+        border-bottom: 1px solid $headerColor;
+    }
+    nav.navbar {
+        border-bottom: 1px solid $headerColor;
+        padding: 0px;
+        ul.navbar-nav .nav-item {
+            padding: 0px;
+            .nav-link {
+                font-family: 'Montserrat-Regular';
+                font-size: 14px;
+                font-weight: bold;
+                color: $headerColor;
+                &:hover {
+                    @extend %link-bar;
+                }
+            }
+            &.active .nav-link {
+                @extend %link-bar;
+            }
+        }
+    }
+}
