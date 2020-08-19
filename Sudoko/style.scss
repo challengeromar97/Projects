@@ -1,0 +1,103 @@
+$mainTextColor: rgba(105, 90, 205, 0.733);
+$secTextColor: rgba(47, 45, 45, 0.815);
+$invalidTextColor: rgba(216, 103, 69, 0.897);
+$mainBgColor: #fff;
+$secBgColor: rgba(66, 200, 88, 0.657);
+$invalidBgColor: rgba(212, 69, 26, 0.301);
+$highLight: rgba(66, 200, 88, 0.15);
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+.sudoku {
+  width: 450px;
+  height: 450px;
+  margin: 30px auto;
+
+  .row {
+    width: 100%;
+    height: calc(100% / 9);
+    display: flex;
+
+    &:nth-of-type(3n) {
+      border-bottom: 1px solid black;
+    }
+
+    &:nth-child(1) {
+      border-top: 1px solid black;
+    }
+  }
+  .spot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    width: calc(100% / 9);
+    height: 100%;
+    color: $mainTextColor;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: $mainBgColor;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    line-height: normal;
+    user-select: none;
+
+    &:nth-of-type(3n) {
+      border-right: 1px solid black;
+    }
+
+    &:nth-child(1) {
+      border-left: 1px solid black;
+    }
+
+    &.highLight {
+      background-color: $highLight;
+    }
+
+    &.invalid {
+      background-color: $invalidBgColor;
+      color: $invalidTextColor;
+    }
+
+    &:hover,
+    &.active {
+      background-color: $secBgColor;
+    }
+
+    &.disabled {
+      color: $secTextColor;
+    }
+  }
+}
+
+.btns {
+  margin-top: 15px;
+  width: 100%;
+  text-align: center;
+  .btn {
+    background-color: $secBgColor;
+    color: $mainBgColor;
+    box-shadow: 2px 2px 120px 6px #ccc;
+    display: inline-block;
+    padding: 6px 10px;
+    margin: 9px;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0px 0px 20px 2px #ccc;
+    }
+  }
+}
+
+.counter {
+  padding: 10px;
+  text-align: center;
+}

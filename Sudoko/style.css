@@ -1,0 +1,112 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: cursive;
+}
+
+.sudoku {
+  width: 450px;
+  height: 450px;
+  margin: 30px auto;
+}
+
+.sudoku .row {
+  width: 100%;
+  height: calc(100% / 9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sudoku .row:nth-of-type(3n) {
+  border-bottom: 1px solid black;
+}
+
+.sudoku .row:nth-child(1) {
+  border-top: 1px solid black;
+}
+
+.sudoku .spot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2rem;
+  font-weight: 100;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0px;
+  margin: 0px;
+  width: calc(100% / 9);
+  height: 100%;
+  color: rgba(105, 90, 205, 0.733);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  line-height: normal;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.sudoku .spot:nth-of-type(3n) {
+  border-right: 1px solid black;
+}
+
+.sudoku .spot:nth-child(1) {
+  border-left: 1px solid black;
+}
+
+.sudoku .spot.highLight {
+  background-color: rgba(66, 200, 88, 0.15);
+}
+
+.sudoku .spot.invalid {
+  background-color: rgba(212, 69, 26, 0.301);
+  color: rgba(216, 103, 69, 0.897);
+}
+
+.sudoku .spot:hover, .sudoku .spot.active {
+  background-color: rgba(66, 200, 88, 0.657);
+}
+
+.sudoku .spot.disabled {
+  color: rgba(47, 45, 45, 0.815);
+}
+
+.btns {
+  margin-top: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+.btns .btn {
+  background-color: rgba(66, 200, 88, 0.657);
+  color: #fff;
+  -webkit-box-shadow: 2px 2px 120px 6px #ccc;
+          box-shadow: 2px 2px 120px 6px #ccc;
+  display: inline-block;
+  padding: 6px 10px;
+  margin: 9px;
+  cursor: pointer;
+}
+
+.btns .btn:hover {
+  -webkit-box-shadow: 0px 0px 20px 2px #ccc;
+          box-shadow: 0px 0px 20px 2px #ccc;
+}
+
+.counter {
+  padding: 10px;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
